@@ -1,20 +1,22 @@
-
 buildscript {
     repositories {
+        mavenLocal()
         jcenter()
         google()
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'org.ec4j.gradle:editorconfig-gradle-plugin:0.0.3'
     }
 }
 
-plugins {
-    id 'org.ec4j.editorconfig' version '0.0.2'
-}
+//plugins {
+//    id 'org.ec4j.editorconfig' version '0.0.3-SNAPSHOT'
+//}
 
 apply plugin: 'com.android.application'
+apply plugin: 'org.ec4j.editorconfig'
 
 repositories {
     jcenter()
